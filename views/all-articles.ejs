@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Articles</title>
+</head>
+
+<body>
+    <h1>All Articles</h1>
+    <p>This is all articles page.</p>
+    <hr>
+    <div style="background-color: orchid; color: black; padding: 20px; margin: 20px; border-radius: 10px;">
+        <% allArticles.forEach(article=> { %>
+            <div>
+                <h4>
+                    <%= article.title %>
+                </h4>
+                <p>
+                    <%= article.body %>
+                </p>
+            </div>
+            <hr>
+            <% }) %>
+    </div>
+</body>
+
+</html>
